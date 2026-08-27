@@ -1,0 +1,40 @@
+{
+  "name": "erp-teacher-attendance-and-salary-management-system",
+  "version": "1.0.0",
+  "description": "ERP Teacher Attendance & Salary Management System Backend - MERN Stack",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "seed": "node src/scripts/seed.js",
+    "test:api": "node src/scripts/testSuite.js"
+  },
+  "keywords": [
+    "erp",
+    "teacher-management",
+    "attendance",
+    "salary",
+    "mern",
+    "express",
+    "mongodb"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.6",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-rate-limit": "^8.6.2",
+    "express-validator": "^7.3.2",
+    "google-auth-library": "^9.15.1",
+    "helmet": "^8.3.0",
+    "jsonwebtoken": "^9.0.3",
+    "mongodb": "^7.6.0",
+    "mongoose": "^8.9.2",
+    "morgan": "^1.11.0",
+    "passport": "^0.7.0",
+    "passport-google-oauth20": "^2.0.0"
+  }
+}
