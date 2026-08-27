@@ -1,560 +1,1106 @@
 # 🎓 TeacherPayRoll ERP
 
-### 👨‍🏫 Enterprise Teacher Attendance & Salary Management System
+## 👨‍🏫 Enterprise Teacher Attendance & Salary Management System
 
-<p align="center">
+<div align="center">
 
-<img src="https://img.shields.io/badge/MERN-FullStack-61DAFB?style=for-the-badge&logo=react&logoColor=black"/>
+<img src="https://img.shields.io/badge/MERN-FullStack-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="MERN Stack" />
+<img src="https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React 19" />
+<img src="https://img.shields.io/badge/Node.js-20%2B-339933?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js" />
+<img src="https://img.shields.io/badge/Express.js-Backend-000000?style=for-the-badge&logo=express&logoColor=white" alt="Express.js" />
+<img src="https://img.shields.io/badge/MongoDB-Atlas-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" />
+<img src="https://img.shields.io/badge/Google-OAuth%202.0-4285F4?style=for-the-badge&logo=google&logoColor=white" alt="Google OAuth" />
+<img src="https://img.shields.io/badge/JWT-Authentication-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white" alt="JWT" />
+<img src="https://img.shields.io/badge/License-ISC-blue?style=for-the-badge" alt="ISC License" />
 
-<img src="https://img.shields.io/badge/React-19-blue?style=for-the-badge&logo=react"/>
+<br /><br />
 
-<img src="https://img.shields.io/badge/Node.js-20+-339933?style=for-the-badge&logo=node.js"/>
+<b>A modern enterprise ERP platform for managing teacher attendance, leave requests, salary calculations, payroll processing, reporting, and faculty administration.</b>
 
-<img src="https://img.shields.io/badge/Express.js-Backend-black?style=for-the-badge&logo=express"/>
+</div>
 
-<img src="https://img.shields.io/badge/MongoDB-Atlas-green?style=for-the-badge&logo=mongodb"/>
+---
 
-<img src="https://img.shields.io/badge/Google-OAuth-red?style=for-the-badge&logo=google"/>
+# 📋 Table of Contents
 
-<img src="https://img.shields.io/badge/JWT-Secure-black?style=for-the-badge&logo=jsonwebtokens"/>
-
-</p>
+* [🌟 Overview](#-overview)
+* [🎯 Project Objectives](#-project-objectives)
+* [✨ Features](#-features)
+* [📸 Screenshots](#-screenshots)
+* [🏛️ System Architecture](#️-system-architecture)
+* [🛠️ Technology Stack](#️-technology-stack)
+* [📂 Project Structure](#-project-structure)
+* [🚀 Installation](#-installation)
+* [⚙️ Environment Configuration](#️-environment-configuration)
+* [🗄️ Database Setup](#️-database-setup)
+* [🌱 Database Seeding](#-database-seeding)
+* [🔐 Authentication & Authorization](#-authentication--authorization)
+* [💰 Salary Calculation](#-salary-calculation)
+* [📡 API Endpoints](#-api-endpoints)
+* [🧪 Testing](#-testing)
+* [📊 Reports & Analytics](#-reports--analytics)
+* [📱 Responsive Design](#-responsive-design)
+* [🔒 Security](#-security)
+* [📈 Future Enhancements](#-future-enhancements)
+* [🤝 Contributing](#-contributing)
+* [📄 License](#-license)
 
 ---
 
 # 🌟 Overview
 
-TeacherPayRoll ERP is an enterprise-grade **MERN Stack** application that automates teacher attendance, leave management, payroll processing, salary calculations, and faculty administration through a modern dashboard with secure authentication.
+**TeacherPayRoll ERP** is an enterprise-grade **Teacher Attendance & Salary Management System** built with the **MERN Stack**.
+
+The platform helps educational institutions digitize and automate:
+
+* 👨‍🏫 Teacher management
+* 📅 Attendance management
+* 🏖️ Leave management
+* 💰 Salary calculation
+* 🧾 Payroll processing
+* 📊 Reports and analytics
+* 🔐 Authentication and authorization
+* 📜 Audit logging
+* 🔔 Notifications
+* 📱 Responsive dashboards
+
+The system provides two primary user roles:
+
+| Role              | Description                                                |
+| ----------------- | ---------------------------------------------------------- |
+| 🛡️ **Admin**     | Full system administration and management                  |
+| 👨‍🏫 **Teacher** | Personal attendance, leave, salary, and profile management |
 
 ---
 
-# 📸 Application Screenshots
+# 🎯 Project Objectives
 
-## 🔐 Login Page
+### 1. 📅 Attendance Automation
 
-<p align="center">
-<img src="./screenshots/login.png" width="900"/>
-</p>
+Replace manual attendance processes with a centralized digital attendance management system.
 
----
+### 2. 💰 Payroll Automation
 
-## 🏠 Admin Dashboard
+Calculate teacher salaries using attendance, leave deductions, allowances, bonuses, and other configured payroll rules.
 
-<p align="center">
-<img src="./screenshots/admin-dashboard.png" width="900"/>
-</p>
+### 3. 🏖️ Leave Management
 
----
+Provide a complete workflow for submitting, reviewing, approving, and rejecting teacher leave requests.
 
-## 👨‍🏫 Teacher Dashboard
+### 4. 🛡️ Administrative Control
 
-<p align="center">
-<img src="./screenshots/teacher-dashboard.png" width="900"/>
-</p>
+Give administrators centralized control over teachers, attendance, payroll, reports, holidays, and system configuration.
+
+### 5. 🔒 Data Security
+
+Protect sensitive employee and payroll information using authentication, authorization, password hashing, protected routes, and audit logging.
 
 ---
 
-## 👥 Teacher Management
+# ✨ Features
 
-<p align="center">
-<img src="./screenshots/teacher-management.png" width="900"/>
-</p>
+## 👨‍🏫 Teacher Management
+
+* ✅ Teacher registration
+* ✅ Teacher profile management
+* ✅ Employee ID management
+* ✅ Department management
+* ✅ Designation management
+* ✅ Qualification information
+* ✅ Contact information
+* ✅ Banking information
+* ✅ Teacher status management
+* ✅ Search and filtering
+* ✅ Teacher details view
 
 ---
 
 ## 📅 Attendance Management
 
-<p align="center">
-<img src="./screenshots/attendance-management.png" width="900"/>
-</p>
-
----
-
-## 🗓️ Attendance Calendar
-
-<p align="center">
-<img src="./screenshots/attendance-calendar.png" width="900"/>
-</p>
+* ✅ Daily attendance
+* ✅ Present status
+* ✅ Absent status
+* ✅ Late status
+* ✅ Half-day status
+* ✅ Holiday status
+* ✅ Weekend handling
+* ✅ Attendance calendar
+* ✅ Attendance history
+* ✅ Bulk attendance management
+* ✅ Attendance locking
+* ✅ Attendance correction workflow
+* ✅ Attendance analytics
+* ✅ Date-based filtering
 
 ---
 
 ## 🏖️ Leave Management
 
-<p align="center">
-<img src="./screenshots/leave-management.png" width="900"/>
-</p>
+* ✅ Leave application
+* ✅ Leave approval
+* ✅ Leave rejection
+* ✅ Leave history
+* ✅ Leave quota management
+* ✅ Medical leave
+* ✅ Casual leave
+* ✅ Annual leave
+* ✅ Leave duration calculation
+* ✅ Weekend exclusion
+* ✅ Holiday exclusion
+* ✅ Leave overlap detection
+* ✅ Salary deduction calculation
 
 ---
 
-## 📝 Leave Application
+## 💰 Salary Management
 
-<p align="center">
-<img src="./screenshots/leave-application.png" width="900"/>
-</p>
+* ✅ Monthly salary calculation
+* ✅ Salary generation
+* ✅ Salary history
+* ✅ Salary details
+* ✅ Allowances
+* ✅ Bonuses
+* ✅ Deductions
+* ✅ Attendance-based deductions
+* ✅ Leave-based deductions
+* ✅ Net salary calculation
+* ✅ Salary slip generation
+* ✅ Payroll period management
 
 ---
 
-## 💰 Payroll Management
+## 🧾 Payroll Management
 
-<p align="center">
-<img src="./screenshots/payroll-dashboard.png" width="900"/>
-</p>
-
----
-
-## 📄 Salary Slip
-
-<p align="center">
-<img src="./screenshots/salary-slip.png" width="900"/>
-</p>
+* ✅ Monthly payroll processing
+* ✅ Payroll calculation
+* ✅ Payroll approval
+* ✅ Payroll locking
+* ✅ Payroll status tracking
+* ✅ Salary disbursement workflow
+* ✅ Payroll summary
+* ✅ Payroll dashboard
+* ✅ Department-wise payroll analysis
 
 ---
 
 ## 📊 Reports & Analytics
 
-<p align="center">
-<img src="./screenshots/reports.png" width="900"/>
-</p>
+* ✅ Attendance reports
+* ✅ Salary reports
+* ✅ Payroll reports
+* ✅ Monthly statistics
+* ✅ Attendance trends
+* ✅ Salary trends
+* ✅ Dashboard analytics
+* ✅ Department-wise reports
+* ✅ PDF reports
+* ✅ Excel export
+* ✅ CSV export
+* ✅ Printable salary slips
 
 ---
 
-## 🔐 Google OAuth Login
+## 🔐 Authentication & Security
 
-<p align="center">
-<img src="./screenshots/google-login.png" width="900"/>
-</p>
-
----
-
-## 📱 Mobile Responsive Design
-
-<p align="center">
-<img src="./screenshots/mobile.png" width="350"/>
-</p>
-
----
-
-# ✨ Enterprise Features
-
-## 👨‍🏫 Teacher Management
-
-* ✅ Teacher Registration
-* ✅ Profile Management
-* ✅ Department Management
-* ✅ Designation Management
-* ✅ Employee ID Generation
-* ✅ Status Management
+* 🔑 JWT authentication
+* 🔄 Access and refresh tokens
+* 🍪 HTTP-only refresh cookies
+* 🌐 Google OAuth 2.0
+* 🛡️ Role-Based Access Control
+* 🔒 Protected routes
+* 🔐 Password hashing
+* 🚫 Unauthorized access prevention
+* 📜 Audit logging
+* 🧾 Activity tracking
+* ⚠️ Input validation
+* 🛡️ Global error handling
 
 ---
 
-## 📅 Attendance
+# 📸 Screenshots
 
-* ✅ Daily Attendance
-* ✅ Present / Absent
-* ✅ Late
-* ✅ Half Day
-* ✅ Attendance Lock
-* ✅ Attendance Calendar
-* ✅ Attendance Analytics
-* ✅ Bulk Attendance
+## 🔐 Login Page
+
+<div align="center">
+
+<img src="./screenshots/login.png" alt="TeacherPayRoll ERP Login Page" width="100%">
+
+<p><b>Secure role-based login for Admin and Teacher users.</b></p>
+
+</div>
+
+---
+
+## 🛡️ Admin Dashboard
+
+<div align="center">
+
+<img src="./screenshots/admin-dashboard.png" alt="Admin Dashboard" width="100%">
+
+<p><b>Centralized administrative dashboard with teacher, attendance, salary, and payroll statistics.</b></p>
+
+</div>
+
+---
+
+## 👨‍🏫 Teacher Dashboard
+
+<div align="center">
+
+<img src="./screenshots/teacher-dashboard.png" alt="Teacher Dashboard" width="100%">
+
+<p><b>Teacher dashboard showing personal attendance, leave, salary, and profile information.</b></p>
+
+</div>
+
+---
+
+## 👥 Teacher Management
+
+<div align="center">
+
+<img src="./screenshots/teacher-management.png" alt="Teacher Management" width="100%">
+
+<p><b>Manage teacher profiles, departments, designations, and employment information.</b></p>
+
+</div>
+
+---
+
+## 📅 Attendance Management
+
+<div align="center">
+
+<img src="./screenshots/attendance-management.png" alt="Attendance Management" width="100%">
+
+<p><b>Daily teacher attendance management with multiple attendance statuses.</b></p>
+
+</div>
+
+---
+
+## 🗓️ Attendance Calendar
+
+<div align="center">
+
+<img src="./screenshots/attendance-calendar.png" alt="Attendance Calendar" width="100%">
+
+<p><b>Monthly attendance calendar for monitoring attendance history.</b></p>
+
+</div>
 
 ---
 
 ## 🏖️ Leave Management
 
-* ✅ Leave Requests
-* ✅ Leave Approval Workflow
-* ✅ Live Leave Quota
-* ✅ Salary Impact Calculator
-* ✅ Medical Leave
-* ✅ Casual Leave
-* ✅ Annual Leave
-* ✅ Leave History
-
----
-
-## 💰 Payroll Engine
-
-* ✅ Automatic Salary Generation
-* ✅ Monthly Payroll
-* ✅ Salary Slip PDF
-* ✅ Attendance Deduction
-* ✅ Leave Deduction
-* ✅ Bonus
-* ✅ Allowances
-* ✅ Net Salary Calculator
-
----
-
-## 🔐 Security
-
-* 🔑 JWT Authentication
-* 🌐 Google OAuth 2.0
-* 🛡 Role-Based Access Control
-* 🔒 Protected Routes
-* 🔐 Password Hashing
-* 📜 Audit Logs
-
----
-
-## 📊 Analytics
-
-* 📈 Attendance Reports
-* 📉 Salary Reports
-* 📊 Monthly Statistics
-* 📋 Dashboard Widgets
-* 📄 PDF Export
-* 📑 Excel Export
-
----
-
-# 🚀 Advanced Features
-
-* 🚀 Enterprise MERN Architecture
-* ⚡ Google One-Tap Authentication
-* 🔐 JWT Access & Refresh Tokens
-* 👥 Admin & Teacher Roles
-* 📅 Attendance Date Locking
-* 🏖️ Smart Leave Quota Engine
-* 💰 Automatic Payroll Processing
-* 📄 Dynamic Salary Slip Generation
-* 📊 Interactive Dashboard
-* 📈 Charts & Analytics
-* 🔍 Global Search
-* 🎯 Advanced Filtering
-* 📦 Modular Folder Structure
-* 🧩 Reusable Components
-* 🌙 Dark Mode Ready
-* 📱 Responsive UI
-* ⚡ High Performance
-* 🔄 RESTful API
-* 🍃 MongoDB Atlas
-* 🛡 Input Validation
-* ⚠ Global Error Handling
-* 📝 Activity Logs
-* 🔍 Audit Trail
-* 📤 CSV Export
-* 📥 Excel Export
-* 🖨 PDF Reports
-* 🔔 Notifications Ready
-* 🧠 Scalable Enterprise Design
-
----
-
-# 🛠️ Tech Stack
-
-| Frontend     | Backend    | Database      | Authentication |
-| ------------ | ---------- | ------------- | -------------- |
-| React 19     | Node.js    | MongoDB Atlas | Google OAuth   |
-| Vite         | Express.js | Mongoose      | JWT            |
-| Tailwind CSS | REST API   |               | RBAC           |
-
----
-
-# 📂 Folder Structure
-
-```text
-TeacherPayRoll-ERP
-│
-├── frontend
-├── backend
-├── screenshots
-├── README.md
-└── LICENSE
-```
-
----
-
-# ⭐ Why This Project?
-
-✔ Enterprise Architecture
-
-✔ Secure Authentication
-
-✔ Payroll Automation
-
-✔ Attendance Tracking
-
-✔ Leave Management
-
-✔ Professional Dashboard
-
-✔ Modern UI/UX
-
-✔ Scalable MERN Stack
-
-✔ Educational ERP Solution
-
----
-
-# 🤝 Contributing
-
-Contributions are welcome!
-
-⭐ Fork the repository
-
-⭐ Create your feature branch
-
-⭐ Commit your changes
-
-⭐ Push to GitHub
-
-⭐ Create a Pull Request
-
----
-
-# 📜 License
-
-ISC License
-
----
-
 <div align="center">
 
-## ⭐ If you like this project, please give it a Star!
+<img src="./screenshots/leave-management.png" alt="Leave Management" width="100%">
 
-Made with ❤️ using the MERN Stack.
-
-</div>
-# 🎓 TeacherPayRoll ERP — Teacher Attendance & Salary Management System
-
-<div align="center">
-
-![MERN Stack](https://img.shields.io/badge/MERN-Fullstack-61DAFB?style=for-the-badge&logo=react&logoColor=black)
-![Node.js](https://img.shields.io/badge/Node.js-v20+-339933?style=for-the-badge&logo=node.js&logoColor=white)
-![Express.js](https://img.shields.io/badge/Express.js-Backend-000000?style=for-the-badge&logo=express&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-Atlas-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
-![Google OAuth](https://img.shields.io/badge/Google%20OAuth-2.0-4285F4?style=for-the-badge&logo=google&logoColor=white)
-![License](https://img.shields.io/badge/License-ISC-blue?style=for-the-badge)
-
-<p align="center">
-  <b>A comprehensive, enterprise-grade faculty attendance tracking and rule-engine automated payroll system for educational institutions.</b>
-</p>
-
-[✨ Features](#-core-features) • [🏛️ Architecture](#-system-architecture) • [🚀 Quick Start](#-getting-started) • [🔐 Authentication](#-authentication--roles) • [💰 Salary Engine](#-salary-calculation-engine) • [📡 API Reference](#-api-endpoints)
+<p><b>Administrative leave management with approval and rejection workflow.</b></p>
 
 </div>
 
 ---
 
-## 🌟 Overview
+## 📝 Leave Application
 
-**TeacherPayRoll ERP** streamlines educational human resource operations by providing automated daily attendance tracking, institutional leave quota balancing, rule-based payroll calculations, salary disbursements, dynamic PDF pay-slips, and comprehensive analytical reporting.
+<div align="center">
 
----
+<img src="./screenshots/leave-application.png" alt="Leave Application" width="100%">
 
-## ✨ Core Features
+<p><b>Teachers can submit leave applications with dates and leave types.</b></p>
 
-### 👨‍🏫 1. Faculty Management
-* 🗂️ Complete teacher profiles with qualifications, emergency contacts, and banking details
-* 📈 Status lifecycle management (`Active`, `On Leave`, `Suspended`, `Resigned`, `Terminated`)
-* 🔍 Real-time search, multi-filter querying, and department grouping
-
-### 📅 2. Attendance & Locking Engine
-* ⏱️ Daily attendance tracking (`Present`, `Absent`, `Late`, `Half Day`, `Holiday`, `Weekend`)
-* 🔒 **Admin Date Locking:** Attendance records can be finalized and locked to prevent unauthorized retro-active tampering
-* 📝 Full audit trail with correction reasons and editor timestamps
-
-### 🏖️ 3. Leave Management & Quota Enforcement
-* 📊 Configurable **5-day free leave quota** per month
-* ⚡ Automated duration calculation excluding weekends and institutional holidays
-* 🛡️ Overlap detection preventing duplicate leave applications for the same date range
-* ⚖️ Admin workflow for one-click approval, rejection, and comment logging
-
-### 💵 4. Rule-Based Salary & Payroll Automation
-* 🧮 Pure salary calculation engine adhering to institutional bylaws:
-  $$\text{Gross Base Salary} = \text{Present Days} \times \text{Daily Salary (Default Rs. 500)}$$
-  $$\text{Absence Deduction} = \text{Absent Days} \times \text{Rs. 100}$$
-  $$\text{Extra Leave Deduction} = \max(0, \text{Leave Days} - 5) \times \text{Rs. 100}$$
-  $$\text{Net Payable} = \text{Gross Base} - (\text{Absence Deduction} + \text{Extra Leave Deduction}) + \text{Allowances} - \text{Deductions}$$
-* 🔄 **Payroll Period Lifecycle:** `OPEN` ➔ `CALCULATING` ➔ `APPROVED` ➔ `LOCKED & PAID`
-* 🧾 Detailed salary slips, allowance additions, and bonus tracking
-
-### 📊 5. Reports & Analytics
-* 📈 6-month comparative payroll & attendance analytics trends
-* 📑 Department-wise payroll breakdown and financial summaries
-* 🖨️ Monthly salary statement export and individual printable pay-slips
-
-### 🛡️ 6. Enterprise Security & Google OAuth
-* 🔑 JWT access token (15-min) + HTTP-only refresh cookies (7-day)
-* 🌐 One-click **Google OAuth 2.0 Identity Services** integration
-* 📜 Immutable audit logging capturing every state-mutating transaction
-* 🛡️ Strict **Role-Based Access Control (RBAC)** across all endpoints
+</div>
 
 ---
 
-## 🏛️ System Architecture
+## 💰 Salary Management
+
+<div align="center">
+
+<img src="./screenshots/salary-management.png" alt="Salary Management" width="100%">
+
+<p><b>Salary management interface for processing teacher salaries.</b></p>
+
+</div>
+
+---
+
+## 🧾 Salary Slip
+
+<div align="center">
+
+<img src="./screenshots/salary-slip.png" alt="Salary Slip" width="100%">
+
+<p><b>Detailed salary slip containing earnings, deductions, allowances, and net salary.</b></p>
+
+</div>
+
+---
+
+## 💵 Payroll Dashboard
+
+<div align="center">
+
+<img src="./screenshots/payroll-dashboard.png" alt="Payroll Dashboard" width="100%">
+
+<p><b>Payroll dashboard for monthly payroll calculation and management.</b></p>
+
+</div>
+
+---
+
+## 📊 Reports Dashboard
+
+<div align="center">
+
+<img src="./screenshots/reports-dashboard.png" alt="Reports Dashboard" width="100%">
+
+<p><b>Interactive reports and analytics dashboard.</b></p>
+
+</div>
+
+---
+
+## 🌐 Google OAuth
+
+<div align="center">
+
+<img src="./screenshots/google-oauth.png" alt="Google OAuth Login" width="100%">
+
+<p><b>Secure Google OAuth 2.0 authentication experience.</b></p>
+
+</div>
+
+---
+
+## 👤 Teacher Profile
+
+<div align="center">
+
+<img src="./screenshots/profile.png" alt="Teacher Profile" width="100%">
+
+<p><b>Personal profile management for teachers and administrators.</b></p>
+
+</div>
+
+---
+
+## ⚙️ System Settings
+
+<div align="center">
+
+<img src="./screenshots/settings.png" alt="System Settings" width="100%">
+
+<p><b>System configuration and user preferences.</b></p>
+
+</div>
+
+---
+
+## 📱 Mobile Responsive View
+
+<div align="center">
+
+<img src="./screenshots/mobile-view.png" alt="Mobile Responsive Design" width="400">
+
+<p><b>Responsive interface optimized for desktop, tablet, and mobile devices.</b></p>
+
+</div>
+
+---
+
+# 🏛️ System Architecture
 
 ```mermaid
 graph TD
-    subgraph Frontend ["🖥️ React 19 Frontend (Vite)"]
-        UI[Tailwind & CSS Modern Theme]
-        AuthContext[Auth Context + Google OAuth]
-        AxiosClient[Axios Instance + Interceptors]
-        Pages[Dashboard / Attendance / Leaves / Salary]
-    end
 
-    subgraph Backend ["⚙️ Node.js / Express API"]
-        Router[Express REST Routers]
-        AuthMW[JWT & RBAC Middleware]
-        Controllers[Domain Controllers]
-        SalaryEngine[Payroll & Salary Calculation Engine]
-        PassportGoogle[Google Auth Library]
-    end
+    A[👤 User] --> B[🖥️ React 19 Frontend]
 
-    subgraph Database ["🗄️ MongoDB Atlas"]
-        Users[(Users)]
-        Teachers[(Teachers)]
-        AttendanceDB[(Attendance)]
-        LeavesDB[(Leaves)]
-        SalariesDB[(Salaries)]
-        AuditDB[(Audit Logs)]
-    end
+    B --> C[🔐 Authentication Context]
+    B --> D[📡 Axios API Client]
 
-    UI --> AuthContext
-    AuthContext --> AxiosClient
-    AxiosClient --> Router
-    Router --> AuthMW
-    AuthMW --> Controllers
-    Controllers --> SalaryEngine
-    Controllers --> PassportGoogle
-    Controllers --> Database
+    C --> E[JWT Authentication]
+    C --> F[Google OAuth 2.0]
+
+    D --> G[⚙️ Express.js REST API]
+
+    G --> H[🛡️ Authentication Middleware]
+    H --> I[🔑 Role Middleware]
+    I --> J[🎯 Controllers]
+
+    J --> K[👨‍🏫 Teacher Service]
+    J --> L[📅 Attendance Service]
+    J --> M[🏖️ Leave Service]
+    J --> N[💰 Salary Service]
+    J --> O[💵 Payroll Service]
+    J --> P[📜 Audit Service]
+
+    K --> Q[(MongoDB Atlas)]
+    L --> Q
+    M --> Q
+    N --> Q
+    O --> Q
+    P --> Q
 ```
 
 ---
 
-## 🚀 Getting Started
+# 🛠️ Technology Stack
 
-### 📋 Prerequisites
-* **Node.js**: `v18.0.0` or higher
-* **npm**: `v9.0.0` or higher
-* **MongoDB**: Local MongoDB or MongoDB Atlas URI
+| Category                 | Technology         |
+| ------------------------ | ------------------ |
+| 🎨 Frontend              | React 19           |
+| ⚡ Build Tool             | Vite               |
+| 🎨 Styling               | CSS / Tailwind CSS |
+| 🧭 Routing               | React Router       |
+| 📡 HTTP Client           | Axios              |
+| 📊 Charts                | Chart Library      |
+| ⚙️ Backend               | Node.js            |
+| 🚀 API Framework         | Express.js         |
+| 🗄️ Database             | MongoDB Atlas      |
+| ODM                      | Mongoose           |
+| 🔐 Authentication        | JWT                |
+| 🌐 Social Authentication | Google OAuth 2.0   |
+| 🔒 Password Security     | bcrypt             |
+| 📜 Logging               | Audit Logs         |
+| 🧪 Testing               | API Test Suite     |
+| 📦 Package Manager       | npm                |
 
-### 🔧 1. Clone & Install Dependencies
+---
+
+# 📂 Project Structure
+
+```text
+TeacherPayRollERP/
+│
+├── 📁 backend/
+│   ├── 📁 src/
+│   │   ├── 📁 config/
+│   │   ├── 📁 constants/
+│   │   ├── 📁 controllers/
+│   │   ├── 📁 middleware/
+│   │   ├── 📁 models/
+│   │   ├── 📁 routes/
+│   │   ├── 📁 scripts/
+│   │   ├── 📁 services/
+│   │   ├── 📁 utils/
+│   │   ├── app.js
+│   │   └── server.js
+│   │
+│   ├── .env.example
+│   ├── .gitignore
+│   ├── package.json
+│   └── README.md
+│
+├── 📁 frontend/
+│   ├── 📁 public/
+│   ├── 📁 src/
+│   │   ├── 📁 api/
+│   │   ├── 📁 assets/
+│   │   ├── 📁 components/
+│   │   ├── 📁 context/
+│   │   ├── 📁 pages/
+│   │   ├── 📁 utils/
+│   │   ├── App.jsx
+│   │   ├── App.css
+│   │   ├── index.css
+│   │   └── main.jsx
+│   │
+│   ├── .env.example
+│   ├── package.json
+│   └── vite.config.js
+│
+├── 📁 screenshots/
+│   ├── login.png
+│   ├── admin-dashboard.png
+│   ├── teacher-dashboard.png
+│   ├── teacher-management.png
+│   ├── attendance-management.png
+│   ├── attendance-calendar.png
+│   ├── leave-management.png
+│   ├── leave-application.png
+│   ├── salary-management.png
+│   ├── salary-slip.png
+│   ├── payroll-dashboard.png
+│   ├── reports-dashboard.png
+│   ├── google-oauth.png
+│   ├── profile.png
+│   ├── settings.png
+│   └── mobile-view.png
+│
+├── 📄 README.md
+├── 📄 Technical_Report.html
+└── 📄 LICENSE
+```
+
+---
+
+# 🚀 Installation
+
+## 📋 Prerequisites
+
+Install the following:
+
+* Node.js 20+
+* npm
+* Git
+* MongoDB Atlas account or local MongoDB
+* Google Cloud project if Google OAuth is enabled
+
+---
+
+## 1️⃣ Clone Repository
 
 ```bash
-# Clone the repository
-git clone https://github.com/your-username/ERP_Teacher.git
-cd ERP_Teacher
+git clone https://github.com/Jathugulan/TeacherPayRollERP.git
+```
 
-# Install backend dependencies
+```bash
+cd TeacherPayRollERP
+```
+
+---
+
+## 2️⃣ Install Backend Dependencies
+
+```bash
 cd backend
-npm install
-
-# Install frontend dependencies
-cd ../frontend
 npm install
 ```
 
-### ⚙️ 2. Environment Configuration
+---
 
-#### Backend `.env` (`backend/.env`)
+## 3️⃣ Install Frontend Dependencies
+
+Open another terminal:
+
+```bash
+cd frontend
+npm install
+```
+
+---
+
+# ⚙️ Environment Configuration
+
+## Backend
+
+Create:
+
+```text
+backend/.env
+```
+
+Example:
+
 ```env
 PORT=5000
 NODE_ENV=development
-MONGO_URI=mongodb+srv://<username>:<password>@cluster.mongodb.net/erp_teacher_management
-JWT_SECRET=super_secret_erp_jwt_key_2026_secure
-JWT_REFRESH_SECRET=super_secret_erp_jwt_refresh_key_2026_secure
+
+MONGO_URI=your_mongodb_atlas_connection_string
+
+JWT_SECRET=your_secure_jwt_secret
+JWT_REFRESH_SECRET=your_secure_refresh_secret
+
 JWT_ACCESS_EXPIRES=15m
 JWT_REFRESH_EXPIRES=7d
+
 COOKIE_SECURE=false
+
 GOOGLE_CLIENT_ID=your_google_client_id
 GOOGLE_CLIENT_SECRET=your_google_client_secret
+
 CLIENT_URL=http://localhost:5173
 SERVER_URL=http://localhost:5000
 ```
 
-#### Frontend `.env` (`frontend/.env`)
-```env
-VITE_GOOGLE_CLIENT_ID=your_google_client_id
-VITE_API_URL=http://localhost:5000/api
+---
+
+## Frontend
+
+Create:
+
+```text
+frontend/.env
 ```
 
-### 🗄️ 3. Seed Database
-Populate the database with sample administrators, teachers, attendance logs, and salary rules:
+Example:
+
+```env
+VITE_API_URL=http://localhost:5000/api
+VITE_GOOGLE_CLIENT_ID=your_google_client_id
+```
+
+> ⚠️ Never commit real `.env` files containing credentials.
+
+Use `.env.example` files for documentation.
+
+---
+
+# 🗄️ Database Setup
+
+TeacherPayRoll ERP uses **MongoDB Atlas**.
+
+Recommended database:
+
+```text
+TeacherPayRollERP
+```
+
+Example collections:
+
+```text
+TeacherPayRollERP
+│
+├── users
+├── teachers
+├── attendances
+├── leaves
+├── salaries
+├── payrollperiods
+├── holidays
+├── notifications
+├── auditlogs
+└── systemconfigs
+```
+
+Example MongoDB URI:
+
+```env
+MONGO_URI=mongodb+srv://<username>:<password>@<cluster>.mongodb.net/TeacherPayRollERP
+```
+
+Replace the placeholders with your own MongoDB Atlas credentials.
+
+---
+
+# 🌱 Database Seeding
+
+If your backend provides a seed script, run:
+
 ```bash
 cd backend
 npm run seed
 ```
 
-### 🧪 4. Run Automated Test Suite
-Execute the 49-point master backend test suite:
+Sample seed data may include:
+
+* Admin users
+* Teacher users
+* Attendance records
+* Salary configuration
+* Sample payroll records
+* Leave records
+
+---
+
+# ▶️ Running the Application
+
+## Backend
+
+```bash
+cd backend
+npm run dev
+```
+
+Backend:
+
+```text
+http://localhost:5000
+```
+
+## Frontend
+
+Open another terminal:
+
+```bash
+cd frontend
+npm run dev
+```
+
+Frontend:
+
+```text
+http://localhost:5173
+```
+
+---
+
+# 🔐 Authentication & Authorization
+
+TeacherPayRoll ERP provides two main roles.
+
+| Role          | Access                         |
+| ------------- | ------------------------------ |
+| 🛡️ Admin     | Full system administration     |
+| 👨‍🏫 Teacher | Personal teacher functionality |
+
+### Admin
+
+Admins can manage:
+
+* Teachers
+* Attendance
+* Leave requests
+* Salary
+* Payroll
+* Reports
+* Holidays
+* System settings
+* Audit logs
+
+### Teacher
+
+Teachers can access:
+
+* Personal dashboard
+* Attendance history
+* Leave applications
+* Leave history
+* Salary information
+* Salary slips
+* Profile management
+
+### Authentication Methods
+
+* Email/password authentication
+* JWT
+* Refresh tokens
+* Google OAuth 2.0
+
+---
+
+# 💰 Salary Calculation
+
+TeacherPayRoll ERP supports configurable salary calculation rules.
+
+### Gross Salary
+
+```text
+Gross Salary
+=
+Basic Salary
++ Allowances
++ Bonuses
+```
+
+### Deductions
+
+```text
+Total Deductions
+=
+Attendance Deductions
++ Leave Deductions
++ Other Deductions
+```
+
+### Net Salary
+
+```text
+Net Salary
+=
+Gross Salary - Total Deductions
+```
+
+The exact calculation rules should be configured according to the institution's payroll policy.
+
+---
+
+# 📡 API Endpoints
+
+## 🔑 Authentication
+
+| Method | Endpoint             | Description           |
+| ------ | -------------------- | --------------------- |
+| POST   | `/api/auth/login`    | User login            |
+| POST   | `/api/auth/register` | User registration     |
+| POST   | `/api/auth/google`   | Google authentication |
+| POST   | `/api/auth/refresh`  | Refresh access token  |
+| GET    | `/api/auth/me`       | Get current user      |
+| POST   | `/api/auth/logout`   | Logout                |
+
+---
+
+## 👨‍🏫 Teachers
+
+| Method | Endpoint            | Description    |
+| ------ | ------------------- | -------------- |
+| GET    | `/api/teachers`     | Get teachers   |
+| POST   | `/api/teachers`     | Create teacher |
+| GET    | `/api/teachers/:id` | Get teacher    |
+| PUT    | `/api/teachers/:id` | Update teacher |
+| DELETE | `/api/teachers/:id` | Delete teacher |
+
+---
+
+## 📅 Attendance
+
+| Method | Endpoint                   | Description         |
+| ------ | -------------------------- | ------------------- |
+| GET    | `/api/attendance`          | Get attendance      |
+| POST   | `/api/attendance`          | Mark attendance     |
+| GET    | `/api/attendance/calendar` | Attendance calendar |
+| POST   | `/api/attendance/lock`     | Lock attendance     |
+
+---
+
+## 🏖️ Leave
+
+| Method | Endpoint                  | Description        |
+| ------ | ------------------------- | ------------------ |
+| GET    | `/api/leaves`             | Get leave requests |
+| POST   | `/api/leaves`             | Submit leave       |
+| PATCH  | `/api/leaves/:id/approve` | Approve leave      |
+| PATCH  | `/api/leaves/:id/reject`  | Reject leave       |
+
+---
+
+## 💰 Salary
+
+| Method | Endpoint               | Description                 |
+| ------ | ---------------------- | --------------------------- |
+| GET    | `/api/salary`          | Get salary records          |
+| GET    | `/api/salary/me`       | Get personal salary history |
+| POST   | `/api/salary/generate` | Generate salary             |
+
+---
+
+## 💵 Payroll
+
+| Method | Endpoint                 | Description       |
+| ------ | ------------------------ | ----------------- |
+| POST   | `/api/payroll/calculate` | Calculate payroll |
+| POST   | `/api/payroll/approve`   | Approve payroll   |
+| POST   | `/api/payroll/lock`      | Lock payroll      |
+
+> API endpoint names should be adjusted if your actual backend routes use different paths.
+
+---
+
+# 🧪 Testing
+
+Run the API test suite if configured in the backend:
+
 ```bash
 cd backend
 npm run test:api
 ```
 
-### 💻 5. Run Application
+Testing areas include:
 
-#### Terminal 1 — Start Backend Server:
-```bash
-cd backend
-npm run dev
+* ✅ Authentication
+* ✅ Authorization
+* ✅ Teacher management
+* ✅ Attendance
+* ✅ Leave management
+* ✅ Salary calculations
+* ✅ Payroll processing
+* ✅ Role restrictions
+* ✅ Attendance locking
+* ✅ Audit logging
+* ✅ API validation
+
+---
+
+# 📊 Reports & Analytics
+
+## Attendance Analytics
+
+* Daily attendance
+* Monthly attendance
+* Present/absent statistics
+* Late statistics
+* Department analysis
+* Attendance trends
+
+## Salary Analytics
+
+* Monthly salary
+* Total payroll
+* Allowances
+* Bonuses
+* Deductions
+* Net salary
+
+## Payroll Analytics
+
+* Processed payroll
+* Pending payroll
+* Payroll status
+* Department-wise payroll
+* Historical payroll trends
+
+---
+
+# 📱 Responsive Design
+
+The application is designed for:
+
+* 🖥️ Desktop
+* 💻 Laptop
+* 📱 Mobile
+* 📟 Tablet
+
+Responsive layouts are provided for dashboards, navigation, tables, forms, reports, and other application screens.
+
+---
+
+# 🔒 Security
+
+Security considerations include:
+
+* 🔐 JWT authentication
+* 🔄 Refresh token mechanism
+* 🍪 HTTP-only cookies
+* 🌐 Google OAuth 2.0
+* 🛡️ RBAC authorization
+* 🔒 Password hashing
+* 🚫 Protected API routes
+* 🧾 Request validation
+* 📜 Audit logging
+* ⚠️ Global error handling
+* 🔐 Environment-based secrets
+
+## 🚨 Never Commit Secrets
+
+Never commit:
+
+```text
+.env
+.env.local
+.env.production
 ```
-*Backend runs on: `http://localhost:5000`*
 
-#### Terminal 2 — Start Frontend Client:
-```bash
-cd frontend
-npm run dev
+Do not place real values such as:
+
+```text
+GOOGLE_CLIENT_SECRET
+JWT_SECRET
+MONGO_URI
+DATABASE_PASSWORD
 ```
-*Frontend runs on: `http://localhost:5173`*
+
+inside the README or source-controlled configuration files.
+
+Use:
+
+```text
+.env.example
+```
+
+with placeholders instead.
 
 ---
 
-## 🔐 Authentication & Roles
+# 📈 Future Enhancements
 
-Full credentials documentation can be found in [`auth.md`](./auth.md).
+Potential future improvements include:
 
-| Role | Email | Password | Access Scope |
-| :--- | :--- | :--- | :--- |
-| **🛡️ Admin** | `admin@erp.com` | `Admin@123` | Full institution management & payroll processing |
-| **👨‍🏫 Teacher** | `john.doe@erp.com` | `Teacher@123` | Personal attendance, leaves, and salary slips |
-| **👨‍🏫 Teacher** | `sarah.smith@erp.com` | `Teacher@123` | Personal attendance, leaves, and salary slips |
-| **🌐 Google OAuth** | *Any Google Account* | *One-Tap Sign-In* | Instant faculty login & automated onboarding |
-
----
-
-## 📡 API Endpoints
-
-### 🔑 Authentication
-* `POST /api/auth/login` — Sign in with email, password & role
-* `POST /api/auth/google` — Authenticate via Google OAuth ID token
-* `POST /api/auth/register` — Self-register teacher profile
-* `POST /api/auth/refresh` — Refresh access token via httpOnly cookie
-* `GET  /api/auth/me` — Retrieve current authenticated session profile
-* `POST /api/auth/logout` — Revoke refresh cookie and terminate session
-
-### 👥 Faculty & Attendance
-* `GET    /api/teachers` — List all teachers with pagination & filters
-* `POST   /api/teachers` — Register new teacher profile
-* `POST   /api/attendance` — Mark daily attendance for faculty
-* `POST   /api/attendance/lock` — Finalize and lock attendance for a specific date
-* `GET    /api/attendance/calendar` — Fetch monthly attendance calendar
-
-### 🏖️ Leave Management
-* `GET    /api/leaves` — List leave applications
-* `POST   /api/leaves` — Submit new leave request
-* `PATCH  /api/leaves/:id/approve` — Approve pending leave
-* `PATCH  /api/leaves/:id/reject` — Reject leave application
-
-### 💰 Payroll & Salary
-* `POST   /api/salary/generate` — Generate monthly salary record
-* `POST   /api/payroll/calculate` — Process institution-wide monthly payroll
-* `POST   /api/payroll/approve` — Finalize and approve payroll period
-* `POST   /api/payroll/lock` — Lock period and disburse salaries
-* `GET    /api/salary/me` — Fetch logged-in teacher's salary history
+* 📧 Email notifications
+* 📱 SMS notifications
+* 🔔 Real-time notifications
+* 💳 Online salary payment integration
+* 📊 Advanced BI dashboards
+* 📁 Document management
+* 🏢 Multi-institution support
+* 🌍 Multi-language support
+* 📱 Progressive Web App
+* ☁️ Cloud deployment
+* 🐳 Docker support
+* 🔄 CI/CD pipeline
+* 📈 Advanced payroll analytics
+* 🧠 AI-powered attendance insights
 
 ---
 
-## 🧪 Testing & Quality Assurance
+# 🤝 Contributing
 
-* ✅ **Salary Logic:** Comprehensive unit tests covering base days, absence penalties, and leave quota deductions.
-* ✅ **Role Boundaries:** Strict 403 Forbidden enforcement on administrative endpoints when accessed by faculty.
-* ✅ **Attendance Integrity:** Verified date-locking constraints preventing retroactive status modifications.
-* ✅ **Audit Logging:** Immutable historical log entries recorded on every sensitive business transaction.
+Contributions are welcome.
+
+### 1. Fork the Repository
+
+```bash
+git clone https://github.com/Jathugulan/TeacherPayRollERP.git
+```
+
+### 2. Create a Feature Branch
+
+```bash
+git checkout -b feature/new-feature
+```
+
+### 3. Make Your Changes
+
+```bash
+git add .
+```
+
+### 4. Commit
+
+```bash
+git commit -m "feat: add new feature"
+```
+
+### 5. Push
+
+```bash
+git push origin feature/new-feature
+```
+
+### 6. Create a Pull Request
+
+Open a Pull Request on GitHub with a clear description of your changes.
 
 ---
 
-## 📄 License
+# 📄 License
+
 This project is licensed under the **ISC License**.
+
+See the [`LICENSE`](./LICENSE) file for details.
+
+---
+
+# 👨‍💻 Developer
+
+## 🎓 TeacherPayRoll ERP
+
+**Teacher Attendance & Salary Management System**
+
+Built with ❤️ using the **MERN Stack**.
+
+⭐ If you find this project useful, consider giving the repository a **Star**.
+
+---
+
+# 📌 Project Summary
+
+| Category          | Details                                |
+| ----------------- | -------------------------------------- |
+| 📌 Project        | TeacherPayRoll ERP                     |
+| 🎯 Purpose        | Teacher Attendance & Salary Management |
+| 🎨 Frontend       | React 19 + Vite                        |
+| ⚙️ Backend        | Node.js + Express.js                   |
+| 🗄️ Database      | MongoDB Atlas                          |
+| 🔐 Authentication | JWT + Google OAuth 2.0                 |
+| 👥 Roles          | Admin + Teacher                        |
+| 📅 Attendance     | Daily + Calendar + Locking             |
+| 🏖️ Leave         | Application + Approval                 |
+| 💰 Payroll        | Salary Processing                      |
+| 📊 Reports        | Attendance + Salary + Payroll          |
+| 📱 Responsive     | Desktop + Tablet + Mobile              |
+| 📜 License        | ISC                                    |
+
+---
+
+<div align="center">
+
+### ⭐ TeacherPayRoll ERP
+
+**Modern • Secure • Scalable • Responsive**
+
+Made with ❤️ for smarter educational administration.
+
+</div>
